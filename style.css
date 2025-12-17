@@ -1,0 +1,86 @@
+/* pages background classes */
+.mainpage {
+    background-image: url(https://www.strasser-steine.at/wp-content/uploads/2020/03/strasser_blog_kw11-646383058.jpg);
+    color:azure;
+    font-family: sans-serif;
+    margin: 5% 15% 5% 15%;
+}
+
+.magicpage {
+    background-color:dimgray;
+    color:azure;
+    font-family: sans-serif;
+    margin:5% 15% 5% 15%
+}
+
+
+/* headlines classes */
+.h1_mainpage {
+    font-family: "Monaco", monospace;
+    font-size: 50px;
+    font-weight: bolder
+}
+
+.h3__mainpage{
+    font-weight: bold;
+}
+
+/* divider class */
+.divider {
+    height:4px;
+    background-color:azure;
+    border-color: azure;
+}
+
+.underline {
+    height:2px;
+    background-color:lightgrey;
+    border-color:lightgrey;
+}
+
+/* div classes */
+.name {
+    background-color: rgba(0, 0 ,0, 0.5);
+    width: 200px;
+    height: 4rem;
+}
+
+.tags {
+    background-color: rgba(0, 0 ,0, 0.5);
+    width: 50px;
+    height: 1.5rem;
+}
+
+.accounts {
+    background-color: rgba(0, 0 ,0, 0.5);
+    width: 140px;
+    height: 1.5rem;
+}
+
+/* nav classes */
+
+#navbox {
+    display:inline-flexbox;
+
+    justify-content: space-evenly;
+    
+}
+
+/* picture classes */
+.loki {
+    padding: 5% 5% 5% 5%
+}
+
+/* default styles */
+
+p {
+    font-size: 20px
+}
+
+a {
+    color: azure
+}
+
+a:visited {
+    color:aquamarine
+}
