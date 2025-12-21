@@ -10,13 +10,16 @@
     background-color: rgb(94, 63, 38);
     color: azure;
     font-family: sans-serif;
-    margin: 10% auto;              /* centering horizontal*/
-    max-width: 1400px;         
-    padding: 40px;             
+    margin: 5% auto;              /* centering horizontal*/
+    max-width: 2000px;         
+    padding: 5%;             
     border: 15px solid black;
     border-radius: 50px;
     box-sizing: border-box;      
-    min-height: 100vh;            /* fils the mininum of the screen */
+}
+
+.gamingpage {
+    background-color: grey;
 }
 
 /* headlines classes */
@@ -47,12 +50,12 @@
     padding: 20px 0;
 }
 
-.h3__mainpage{
+.h2__mainpage{
     font-size: 32px;
     font-weight: bold;
 }
 
-.h3_magicpage{
+.h2_magicpage{
     font-size: 32px;
     padding: 10px;
     position: center;
@@ -94,19 +97,10 @@
     height: 2.5rem;
 }
 
-.container {
-    display: flex;
-    gap: 60px;                    /* distance between collumns */
-    margin: 40px auto;            /* distacne top/bottom and centering */
-    max-width: 1200px;
-    flex-wrap: wrap;              
-    justify-content: center;      /* centering space if ther is too much space */
-    align-items: flex-start;
-}
-
 .colors {
     flex: 1;             
     min-width: 300px;
+    padding: 20px;
 }
 
 .decklist{
@@ -144,17 +138,18 @@
     padding: 2.5% 2.5% 2.5% 2.5%;
 }
 
-.decklist img {
+.decklist a img {
     width: 100%;
-    max-width: 280px;             
+    max-width: 312px;             
     height: auto;
-    border-radius: 12px;          
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); 
-    transition: transform 0.3s ease;
+    border-radius: 15px;          
+    box-shadow: 0 80px 20px rgba(0, 0, 0, 0.6); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .decklist img:hover {
-    transform: scale(1.08);       
+    transform: scale(1.08); 
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.9);     
 }
 
 /* default styles */
@@ -167,7 +162,3 @@ a {
     color: azure;
     font-size: 32px
 }
-
-/*a:visited {
-    color:aquamarine
-}*/
