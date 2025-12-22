@@ -6,19 +6,70 @@
     </head>
     <body class="gamingpage">
         <main>
+            <center>
             <h1 class="h1_gamingpage"> My Gaming World </h1>
+            </center>
             <section>
+                <center>
                 <h2 class="h2_gamingpage"> Favorite Games: </h2>
-                <ul>
-                    <li><a><img scr=""> Monster Hunter Wilds: Hunter Img</a></li>
-                    <li><a><img scr=""> Dead by Daylight: Fav Char Img</a></li>
-                    <li><a><img scr="images/Jingliu.png"> Honkai Star Rail: Fav Char img</a></li>
-                    <li><a><img scr=""> Resident Evil: Fav Games of Franchise </a></li>
-                    <li><a><img scr=""> Pokémon: Fav Games of Franchise</a></li>
-                    <li><a><img scr=""> Rouge-Like Games like The Binding of Issac, Hades and Cult of the Lamp: Img like of Cult</a></li>
-                    <li><a><img scr="">Souls Games like Dark Souls 1, Demon Souls and Elden Ring: Elden Ring and Dark Souls Char img</a></li>
+                <div class="gaming_div" >
+                    <div class="game"><a>Monster Hunter Wilds:<img src="images/monsterhunter.jpeg" height= 250 widht= 100 class="gaming_img"></a></div>
+                    <div class="game"><a>Dead by Daylight:<img src="images/vee_dbd.png" height= 250 widht= 100 class="gaming_img"></a></div>
+                    <div class="game"><a>Honkai Star Rail: <img src="images/cyrene.webp" height= 250 widht= 100 class="gaming_img"> </a></div>
+                    <div class="game"><a>Resident Evil: Fav Games of Franchise <img src="images/resi.jpg" height= 250 widht= 100 class="gaming_img"> </a></div>
+                    <div class="game"><a>Rouge-Like Games like The Binding of Issac, Hades and Cult of the Lamp: <img src="images/hades.webp" height= 250 widht= 100 class="gaming_img"></a></div>
+                    <fiv class="game"><a>Souls Games like Dark Souls 1, Demon Souls and Elden Ring:<img src="images/eldenring.jpeg" height= 250 widht= 100 class="gaming_img"></a></div>
                 </ul>
+                </center>
             </section>
+            <p>
+                <hr class="divider_gaming">
+            </p>
+            <section>
+                <center>
+                <h2 class="h2_gamingpage"> fun facts </h2>
+                </center>
+                <p> 1. I spend the most gaming hours on a gacha game called Genshin Impact.</p>
+                <p> 2. When I like a game so much, I usually buy it on multiple devices just to support the creators—for example, Hades or Cult of the Lamb. And if I like the game way too much, I get the platinum trophy on PlayStation.</p>
+                <p> 3. I started gaming on my PS4. I was pretty much into shooters like Call of Duty: Black Ops 3 (1,046 hours of playtime)—don't judge, I was 16 back then.</p>
+                <p> 4. The second most played game in my library is Dead by Daylight (almost 900 hours of playtime). I started playing the game when it came out in 2016, and I still play it regularly.</p>
+            </section>
+            <p>
+                <hr class="divider_gaming">
+            </p>
+            <section>
+                <center>
+                <h2 class="h2_gamingpage"> Tell me about your favortie Game: </h2>
+                </center>
+                <form class="game-form" id="gameForm">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    
+                    <label for="favoriteGame">Your Favorite Game:</label>
+                    <input type="text" id="favoriteGame" name="favoriteGame" placeholder="What's your all-time favorite?" required>
+                    
+                    <label>Which of my favorites have you played? (check all that apply)</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="played" value="Monster Hunter Wilds"> Monster Hunter Wilds</label>
+                        <label><input type="checkbox" name="played" value="Dead by Daylight"> Dead by Daylight</label>
+                        <label><input type="checkbox" name="played" value="Honkai Star Rail"> Honkai Star Rail</label>
+                        <label><input type="checkbox" name="played" value="Resident Evil"> Resident Evil series</label>
+                        <label><input type="checkbox" name="played" value="Rogue-Likes"> Rogue-Likes (Isaac, Hades, etc.)</label>
+                        <label><input type="checkbox" name="played" value="Souls Games"> Souls Games</label>
+                        <label><input type="checkbox" name="played" value="Other"> Other / None</label>
+                    </div>
+                    
+                    <label for="message">Why is it your favorite? Tell me more!</label>
+                    <textarea id="message" name="message" placeholder="Share your thoughts..." required></textarea>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+                
+                <div id="thankYouMessage">
+                    Thank you for sharing! 🎮 Your favorite game sounds awesome!
+                </div>
+            </section>
+
         </main>
     </body>
 </html>

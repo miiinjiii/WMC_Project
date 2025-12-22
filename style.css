@@ -19,8 +19,13 @@
 }
 
 .gamingpage {
-    background-color: grey;
+    background-color: #2d1b69;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
 }
+
 
 /* headlines classes */
 .h1_mainpage {
@@ -50,6 +55,22 @@
     padding: 20px 0;
 }
 
+
+.h1_gamingpage {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #fff;
+    text-shadow: 
+    0 0 10px #ff00ff,
+    0 0 20px #ff00ff,
+    0 0 30px #ff00ff,
+    0 0 40px #00ffff,
+    0 0 70px #00ffff,
+    0 0 80px #00ffff;
+    animation: flicker 3s infinite alternate;
+}
 .h2__mainpage{
     font-size: 32px;
     font-weight: bold;
@@ -60,6 +81,20 @@
     padding: 10px;
     position: center;
     color:#FFD700
+}
+
+.h2_gamingpage {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #00ffff;
+    text-shadow: 
+    0 0 8px #00ffff,
+    0 0 15px #00ffff,
+    0 0 25px #ff00ff,
+    0 0 35px #ff00ff;
+    margin-bottom: 20px;
 }
 
 /* divider class */
@@ -75,6 +110,11 @@
     background-color:black;
     border-color: black;
     margin:5% 0% 5% 0%
+}
+
+.divider_gaming {
+    border: 1px solid #ff00ff;
+    margin: 40px 0;
 }
 
 /* div classes */
@@ -112,6 +152,23 @@
     align-items: center;           /* zentriert alles in der Spalte */
     gap: 30px;
 }
+
+
+.gaming_div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 40px;
+}
+
+.game {
+    background: rgba(255, 0, 255, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(255, 0, 255, 0.6);
+    backdrop-filter: blur(5px);
+}
+
 /* buttons classes */
 
 .buttons a {
@@ -150,6 +207,79 @@
 .decklist img:hover {
     transform: scale(1.08); 
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.9);     
+}
+
+.gaming_img {
+    max-width: 500px;    
+    width: 100%;
+    height: auto;
+    border: 3px solid #ff00ff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #ff00ff;
+    margin-top: 10px;
+}
+
+/* form */
+
+.game-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 0, 255, 0.1);
+    border: 2px solid #ff00ff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #ff00ff;
+}
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-size: 1.1em;
+    color: #ffccff;
+}
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #3a1f7a;
+    border: 1px solid #ff00ff;
+    border-radius: 8px;
+    color: white;
+    font-size: 1em;
+}
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+.checkbox-group {
+    margin: 15px 0;
+}
+.checkbox-group label {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 1em;
+}
+button {
+    display: block;
+    width: 200px;
+    margin: 20px auto 0;
+    padding: 12px;
+    background-color: #ff00ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ff00ff;
+}
+button:hover {
+    background-color: #ff33ff;
+    box-shadow: 0 0 20px #ff00ff;
+}
+#thankYouMessage {
+    text-align: center;
+    color: #ffccff;
+    font-size: 1.3em;
+    margin-top: 20px;
+    display: none;
 }
 
 /* default styles */
