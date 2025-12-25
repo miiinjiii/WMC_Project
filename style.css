@@ -15,17 +15,22 @@
     padding: 5%;             
     border: 15px solid black;
     border-radius: 50px;
-    box-sizing: border-box;      
+    box-sizing: border-box;     
 }
 
 .gamingpage {
     background-color: #2d1b69;
-    color: white;
+    color: azure;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
 }
 
+.reactiontimepage {
+    font-family: sans-serif;
+    background-color: grey;
+    color: azure;
+}
 
 /* headlines classes */
 .h1_mainpage {
@@ -46,10 +51,10 @@
     font-family: 'Beleren Bold', 'Arial Black', sans-serif; 
     font-size: 4rem;
     font-weight: bold;
-    color: #FFD700; /* Golden wie MTG-Titel */
+    color: #FFD700; 
     text-shadow: 3px 3px 0 #8B0000,  /* depth */ 
-    0 0 20px #FF4500,   /* glow like fire */
-    0 0 40px #FFD700;   /* gold halo */
+    0 0 20px #FF4500,   /* glow */
+    0 0 40px #FFD700;   /* makes it look  like a gold halo */
     letter-spacing: 3px;
     text-transform: uppercase;
     padding: 20px 0;
@@ -61,7 +66,7 @@
     font-size: 4rem;
     text-transform: uppercase;
     letter-spacing: 5px;
-    color: #fff;
+    color: azure;
     text-shadow: 
     0 0 10px #ff00ff,
     0 0 20px #ff00ff,
@@ -69,7 +74,7 @@
     0 0 40px #00ffff,
     0 0 70px #00ffff,
     0 0 80px #00ffff;
-    animation: flicker 3s infinite alternate;
+    animation: flicker 3s infinite alternate; /*gives me this old retor look*/
 }
 .h2__mainpage{
     font-size: 32px;
@@ -85,7 +90,7 @@
 
 .h2_gamingpage {
     font-family: 'Orbitron', sans-serif;
-    font-size: 2.5rem;
+    font-size: 32px;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #00ffff;
@@ -141,6 +146,7 @@
     flex: 1;             
     min-width: 300px;
     padding: 20px;
+    font-size: 32px;
 }
 
 .decklist{
@@ -151,17 +157,17 @@
     flex-direction: column;
     align-items: center;           /* zentriert alles in der Spalte */
     gap: 30px;
+    font-size: 32px;
 }
 
-
-.gaming_div{
+.gaming_div{ /* for the picture "frames" */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
     padding: 40px;
 }
 
-.game {
+.game { 
     background: rgba(255, 0, 255, 0.1);
     padding: 20px;
     border-radius: 20px;
@@ -169,15 +175,36 @@
     backdrop-filter: blur(5px);
 }
 
-/* buttons classes */
+.reactiontime_div{
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 32px;
+    position: relative;
+    margin: 20px auto;
+    width: 800px;                
+    height: 500px;             
+    margin: 40px auto;           
+    border: 3px solid #333;      
+    border-radius: 10px;
+    overflow: hidden;            
+}
 
-.buttons a {
+#box{
+    background-color: blueviolet;
+    width: 100px;
+    height: 100px;
+    position: absolute;   
+    display: none;
+    cursor: pointer;
+}
+
+/* buttons classes */
+.buttons a { /* basoically a div too but it works like buttons*/
     padding: 20px 40px;
     background-color: rgba(0, 0, 0.7); /* transparent backgroundcolor */
     border: 3px solid hwb(180 94% 0%);
     border-radius: 10px;
     font-size: 32px;
-    color: white;
+    color: azure;
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease;
@@ -188,6 +215,21 @@
     background-color: rgba(103, 126, 156, 0.9);
     transform: scale(1.05);
     box-shadow: 0 0 25px rgba(0, 225, 255, 0.8);
+}
+
+#randomButton {
+    padding: 10px 20px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #333;
+    color: azure;
+    border: none;
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
+    border-radius: 5px;
+}
+
+#randomButton:hover {
+    background-color: #555;
 }
 
 /* picture classes */
@@ -219,8 +261,12 @@
     margin-top: 10px;
 }
 
-/* form */
+#randomResult img {
+    display: block;
+    margin: 0 auto 10px auto;
+}
 
+/* form */
 .game-form {
     max-width: 600px;
     margin: 0 auto;
@@ -282,13 +328,21 @@ button:hover {
     display: none;
 }
 
-/* default styles */
+
+/* p's*/
 
 p {
     font-size: 32px
 }
 
+#randomResult p {
+    margin: 5px 0;
+    font-size: 32px;
+}
+
+/* default styles */
 a {
     color: azure;
     font-size: 32px
 }
+
