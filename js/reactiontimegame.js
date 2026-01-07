@@ -1,3 +1,6 @@
+/**
+ * a simple game that tests your reaction by clicking the colored object as fast as possible
+ */
 
 //this function gets me a random color 
 function getRandomColor() { 

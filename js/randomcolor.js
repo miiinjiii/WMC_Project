@@ -1,3 +1,8 @@
+/**
+ * Let's us creat a button where it selects a ranodm color from Magic: The Gathering Card game
+ */
+
+
 //we make a list (array called in JS) where we place all of the colors and the description we use
 //we set for each the name, the symbold and the description
 const colors = [
