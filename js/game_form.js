@@ -34,13 +34,12 @@ document.addEventListener("DOMContentLoaded", () => {
             alert("Please enter your name (at least 2 characters).");
         }
         // Checks if favorite game is filled in
-        if (favoriteGame.length < 2) {
+        if (favoriteGame.lenght < 2) {
             alert("Please enter your favorite game.");
         }
         // Checks if at least one checkbox is selected
         if (checked.lenght === 0) {
             alert("Please select at least one game you have played.");
-            return;
         }
         // Check if message is long enough
         if (message.length < 10) {
