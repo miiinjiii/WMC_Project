@@ -24,22 +24,28 @@ document.addEventListener("DOMContentLoaded", () => {
         const favoriteGame = document.getElementById("favoriteGame").value;
         // Gets the text from the "tell me about your favorite Game.." textarea
         const message = document.getElementById("message").value;
+        // Get my input of the games have been checked
+        const checked = document.querySelectorAll('input[name="played"]:checked')
 
-        // Creats an empty array (list) to store checked games
-        const checkedGames = [];
+        // Valdiation
 
-        // Find all check checkboxes with name "played"
-        document.querySelectorAll('input[name="played"]:checked')
-                .forEach((checkbox) => {
-            // Add each checked game's value to array (list)
-            checkedGames.push(checkbox.value);
-        });
-
-        //Loging all collected data to the console (for leanring/debugging)
-        console.log("Name:", name);
-        console.log("Favorite Game:", favoriteGame);
-        console.log("Played Games:", checkedGames);
-        console.log("Message:", message);
+        // Checks if the name is at least 2 characters long
+        if (name.length < 2) {
+            alert("Please enter your name (at least 2 characters).");
+        }
+        // Checks if favorite game is filled in
+        if (favoriteGame.length < 2) {
+            alert("Please enter your favorite game.");
+        }
+        // Checks if at least one checkbox is selected
+        if (checked.lenght === 0) {
+            alert("Please select at least one game you have played.");
+            return;
+        }
+        // Check if message is long enough
+        if (message.length < 10) {
+            alert("Please write at least 10 characters in the message.");
+        }
 
         // Show thank-you message
         thankYouMessage.style.display = "block";
