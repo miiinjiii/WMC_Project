@@ -32,18 +32,22 @@ document.addEventListener("DOMContentLoaded", () => {
         // Checks if the name is at least 2 characters long
         if (name.length < 2) {
             alert("Please enter your name (at least 2 characters).");
-        }
+            return;
+        }   
         // Checks if favorite game is filled in
-        if (favoriteGame.lenght < 2) {
+        if (favoriteGame.length < 2) {
             alert("Please enter your favorite game.");
+            return;
         }
         // Checks if at least one checkbox is selected
-        if (checked.lenght === 0) {
+        if (checked.length === 0) {
             alert("Please select at least one game you have played.");
+            return;
         }
         // Check if message is long enough
         if (message.length < 10) {
             alert("Please write at least 10 characters in the message.");
+            return;
         }
 
         // Show thank-you message
