@@ -7,7 +7,7 @@
 }
 
 .magicpage {
-    background-color: rgb(94, 63, 38);
+    background-image: url("images/background_magic.png");
     color: azure;
     font-family: sans-serif;
     margin: 5% auto;              /* centering horizontal*/
@@ -19,7 +19,7 @@
 }
 
 .gamingpage {
-    background-color: #2d1b69;
+    background-image: url("images/background_gaming.webp");
     color: azure;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -74,7 +74,6 @@
     0 0 40px #00ffff,
     0 0 70px #00ffff,
     0 0 80px #00ffff;
-    animation: flicker 3s infinite alternate; /*gives me this old retor look*/
 }
 .h2__mainpage{
     font-size: 32px;
@@ -197,19 +196,50 @@
     cursor: pointer;
 }
 
-/* buttons classes */
-.buttons a { /* basoically a div too but it works like buttons*/
+/* div buttons classes */
+.buttons a { /* basically a div too but it works like buttons*/
     padding: 20px 40px;
     background-color: rgba(0, 0, 0.7); /* transparent backgroundcolor */
     border: 3px solid hwb(180 94% 0%);
     border-radius: 10px;
     font-size: 32px;
     color: azure;
-    text-decoration: none;
     font-weight: bold;
-    transition: all 0.3s ease;
     box-shadow: 0 0 15px rgba(191, 232, 238, 0.6);
 }
+
+.button_gaming a {
+    display:inline-block;
+    text-align:center;
+    margin: 40px 0;
+    border: 3px solid #ff00ff;   /* neon magenta border */
+    border-radius: 5px;
+    padding: 20px 40px;
+    background-color: rgba(45, 27, 105, 0.85); /* same deep purple as gaming page */  
+    font-size: 32px;
+    color: #00ffff;                         /* cyan text */
+    font-weight: bold;
+    box-shadow: 
+        0 0 15px #ff00ff,
+        0 0 30px #00ffff;
+}
+
+.button_magic a {
+    display: inline-block;
+    text-align: center;
+    margin: 40px 10px;
+    border: 3px solid #FFD700;             /* gold border */
+    border-radius: 8px;
+    padding: 20px 40px;
+    background-color: rgba(40, 20, 10, 0.9); /* dark fantasy brown */
+    font-size: 32px;
+    font-weight: bold;
+    color: #FFD700;                        /* gold text */
+    box-shadow:
+        0 0 10px #8B0000,                  /* dark red glow */
+        0 0 25px #FFD700;                  /* gold glow */
+}
+
 
 .buttons a:hover {
     background-color: rgba(103, 126, 156, 0.9);
@@ -217,6 +247,25 @@
     box-shadow: 0 0 25px rgba(0, 225, 255, 0.8);
 }
 
+.button_gaming a:hover{
+    background-color: rgba(60, 35, 140, 0.95);
+    color: white;
+    border-color: #00ffff;
+    box-shadow: 
+        0 0 25px #ff00ff,
+        0 0 50px #00ffff;
+}
+
+.button_magic a:hover {
+    background-color: rgba(80, 30, 10, 1);
+    color: white;
+    border-color: #FF4500;                /* fiery red */
+    box-shadow:
+        0 0 20px #FF4500,
+        0 0 40px #FFD700;
+}
+
+/* also for the random color generator */
 #randomButton {
     padding: 10px 20px;
     font-size: 25px;
@@ -261,6 +310,7 @@
     margin-top: 10px;
 }
 
+/* for the js random color generator */
 #randomResult img {
     display: block;
     margin: 0 auto 10px auto;
@@ -303,6 +353,8 @@ textarea {
     margin-right: 15px;
     font-size: 1em;
 }
+
+/*submit button */
 button {
     display: block;
     width: 200px;
@@ -320,6 +372,10 @@ button:hover {
     background-color: #ff33ff;
     box-shadow: 0 0 20px #ff00ff;
 }
+
+
+
+/* Message for the form */
 #thankYouMessage {
     text-align: center;
     color: #ffccff;
@@ -327,7 +383,6 @@ button:hover {
     margin-top: 20px;
     display: none;
 }
-
 
 /* p's*/
 
@@ -340,9 +395,10 @@ p {
     font-size: 32px;
 }
 
-/* default styles */
-a {
-    color: azure;
-    font-size: 32px
+/* link for the Spotify */
+
+a.Spotify{
+    color:azure
 }
+
 
