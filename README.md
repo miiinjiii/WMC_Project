@@ -16,26 +16,26 @@ The website is simple. You can look at it right in your web browser. It has its 
 
 ## Pages
 
-- *Main Page (mainpage.html)**:
-- **Introdruction and profile image
-- **Tags for Steam, PSN and Spotify (with link)
-- ** A reachtion time game made with JavaScript
+- Main Page (mainpage.html):
+  - Introdruction and profile image
+  - Tags for Steam, PSN and Spotify (with link)
+  -  A reachtion time game made with JavaScript
 
-- *Gaming Page (gaming.html)**:
-- **List of favorite games with images
-- **Fun facts
-- **A web form where visitors can enter:
-- ***their name
-- ***favorite game
-- ***games they have played
-- *** a message
-- **The form is validated with external JavaScript
+- Gaming Page (gaming.html):
+  - List of favorite games with images
+  - Fun facts
+  - A web form where visitors can enter:
+    - their name
+    - favorite game
+    - games they have played
+    - a message
+  - The form is validated with external JavaScript
 
-- **Magic: The Gathering Page (magic.html)**:
-- **Story about how I started playing Magic: The Gathering
-- **Ranking of MTG colors
-- **Random MTG color generator (JavaScript)
-- **Links to my deck lists
+- Magic: The Gathering Page (magic.html):
+  - Story about how I started playing Magic: The Gathering
+  - Ranking of MTG colors
+  - Random MTG color generator (JavaScript)
+  - Links to my deck lists
 
 
 ## Technologies Used
