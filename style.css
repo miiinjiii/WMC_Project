@@ -150,18 +150,18 @@
 
 .decklist{
     flex: 1;                      /* same space as the colors */
-    min-width: 350px;             /* mindestens breit genug für Karten */
+    min-width: 350px;             
     padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;           /* zentriert alles in der Spalte */
+    align-items: center;           /* centers all columns */
     gap: 30px;
     font-size: 32px;
 }
 
 .gaming_div{ /* for the picture "frames" */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* adjust to window size*/
     gap: 40px;
     padding: 40px;
 }
@@ -243,7 +243,6 @@
 
 .buttons a:hover {
     background-color: rgba(103, 126, 156, 0.9);
-    transform: scale(1.05);
     box-shadow: 0 0 25px rgba(0, 225, 255, 0.8);
 }
 
@@ -372,8 +371,6 @@ button:hover {
     background-color: #ff33ff;
     box-shadow: 0 0 20px #ff00ff;
 }
-
-
 
 /* Message for the form */
 #thankYouMessage {
