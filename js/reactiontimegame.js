@@ -12,7 +12,7 @@ function getRandomColor() {
     return color; //returns my random color for example "#1A47F5C"
 }
 
-var clickedTime, createdTime, reactionTime; //variables to store the timestamps and to calc. with them 
+let clickedTime, createdTime, reactionTime; //variables to store the timestamps and to calc. with them 
 
 // this function creates and displays a new "box" (our target we need to click on in time)
 function makeBox() {
